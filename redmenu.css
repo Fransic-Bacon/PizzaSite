@@ -1,0 +1,686 @@
+
+      :root {
+        --italian-green: #008c45;
+        --italian-white: #f4f5f0;
+        --italian-red: #cd212a;
+        --dark-charcoal: #333;
+        --light-grey: #e9ecef;
+        --medium-grey: #666;
+        --cream-white: #fdfdfd;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+ 
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.6;
+        color: var(--dark-charcoal);
+        background: linear-gradient(
+          135deg,
+          var(--light-grey),
+          var(--italian-white)
+        );
+      }
+
+      /* Header */
+      .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        padding: 1rem 0;
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+      }
+
+      .logo {
+        /* font-family: "Charmonman", cursive; */
+       font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--italian-red);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .italian-flag {
+          width: 30px;
+    height: 20px;
+    background: linear-gradient(to right, #009246 33%, #fff 33% 66%, #ce2b37 66%);
+    border-radius: 3px;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 2.5rem;
+      }
+
+      .nav-menu a {
+        text-decoration: none;
+        color: var(--dark-charcoal);
+        font-weight: 600;
+        padding: 0.7rem 1.2rem;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .nav-menu a:hover {
+        color: var(--italian-red);
+        background: rgba(var(--italian-red), 0.08);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .nav-menu a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--italian-red);
+        transition: width 0.3s ease-out;
+      }
+
+      .nav-menu a:hover::after {
+        width: 80%;
+      }
+
+
+
+
+      
+.dropdown-menu > a > li {
+    width: 100%; /* Make list items take full width */
+}
+
+/* Styling for the anchor tags */
+.dropdown-menu a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
+    display: block; /* Make the link fill the list item */
+    
+}
+
+
+.dropdown-menu > a > li > button {
+color: var(--italian-red);
+font-weight: 600;
+font-size: large;
+
+}
+
+
+
+
+
+
+      /* Mobile Menu */
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: var(--italian-red);
+        cursor: pointer;
+        padding: 0.5rem;
+      }
+
+      /* Hero Banner */
+      .menu-hero {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 80px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .menu-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1280px-Flag_of_Italy.svg.png");
+        opacity: 0.8;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 0.1;
+        }
+        100% {
+          transform: scale(1.05);
+          opacity: 0.15;
+        }
+      }
+
+      .menu-hero-content {
+        z-index: 1;
+        padding: 0 1rem;
+      }
+
+      .menu-hero-content h1 {
+        font-family: "Charmonman", cursive;
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        letter-spacing: 3px;
+        animation: fadeInDown 1s ease-out;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .menu-hero-content p {
+        font-size: 1.5rem;
+        opacity: 0.95;
+        font-style: italic;
+        animation: fadeInUp 1s ease-out 0.3s both;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Menu Navigation */
+      .menu-nav {
+        padding: 1.5rem 2rem;
+        text-align: center;
+        background: var(--cream-white);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 80px;
+        z-index: 100;
+        border-bottom: 3px solid var(--italian-red);
+      }
+
+      .menu-tabs {
+        margin-top: 1vh;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+
+      .menu-tab {
+        padding: 0.8rem 1.8rem;
+        background: transparent;
+        border: 2px solid var(--italian-red);
+        border-radius: 50px;
+        color: var(--italian-red);
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .menu-tab:hover,
+      .menu-tab.active {
+        background: linear-gradient(45deg, var(--italian-red), #e74c3c);
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(var(--italian-red), 0.4);
+        border-color: transparent;
+      }
+
+      /* Menu Content */
+      .menu-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+      }
+
+      .menu-section {
+        display: none;
+        animation: fadeIn 0.8s ease-in-out;
+      }
+
+      .menu-section.active {
+        display: block;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .pizza-grid {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(450px, 1fr)
+        ); /* Ändrad från 300px till 450px för att få 2 kolumner på bredare skärmar */
+        gap: 1rem;
+        margin-top: 0rem;
+      }
+      .pizza-card {
+        background: var(--cream-white);
+        border-radius: 12px; /* Mindre rundade hörn som i bilden */
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Lättare skugga */
+        transition: all 0.2s ease-in-out; /* Snabbare transition */
+        display: flex; /* För att centrera innehåll vertikalt */
+        align-items: center; /* Centrera vertikalt */
+        padding: 1.5rem 2rem; /* Lite mer padding */
+        min-height: 120px; /* Sätt en minimumhöjd för jämnhet */
+        /* border-bottom: 5px solid var(--italian-red); /* Ta bort denna om du inte vill ha röd kant */
+      }
+
+      .pizza-card:hover {
+        transform: translateY(-5px); /* Mindre lyft vid hover */
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Tydligare skugga vid hover */
+      }
+      .pizza-image {
+        height: 280px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        border-bottom: 5px solid var(--italian-red);
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 1rem;
+      }
+
+      .pizza-number {
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        position: absolute; /* Changed from top/right to absolute for better positioning */
+        top: 1.2rem;
+        right: 1.2rem;
+      }
+
+      .pizza-content {
+        flex-grow: 1; /* Låter innehållet ta upp tillgängligt utrymme */
+        display: flex;
+        flex-direction: column; /* Stapla namn, ingredienser, pris */
+        justify-content: center; /* Centrera innehåll vertikalt */
+        padding: 0; /* Ta bort tidigare padding, den ligger nu på pizza-card */
+      }
+      .pizza-header {
+        display: block; /* Ändra tillbaka till block för att priset ska flytta sig under */
+        margin-bottom: 0.5rem; /* Mindre marginal om du behåller den */
+      }
+      .pizza-name {
+        font-family: "Charmonman", cursive;
+        font-size: 1.5rem; /* Mindre storlek */
+        font-weight: 700;
+        color: var(--dark-charcoal);
+        margin-bottom: 0.3rem; /* Mindre marginal */
+        line-height: 1.2;
+      }
+
+      .pizza-price {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--italian-red);
+        background: linear-gradient(45deg, var(--italian-red), #e74c3c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+      .pizza-price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--dark-charcoal); 
+        align-self: flex-end; 
+        margin-left: auto;
+      }
+
+      .newstyle {
+        font-family: "Charmonman", cursive;
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+        line-height: 1.4;
+        text-align: center;
+        margin: 25px 0;
+      }
+
+      .order-btn {
+        width: 100%;
+        padding: 1.2rem;
+        background: linear-gradient(45deg, var(--italian-red), #e74c3c);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .order-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(var(--italian-red), 0.4);
+      }
+
+      .order-btn:active {
+        transform: translateY(0);
+        box-shadow: 0 4px 15px rgba(var(--italian-red), 0.2);
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(-100px) scale(0.8);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0) scale(1);
+          opacity: 1;
+        }
+      }
+
+      .close-btn {
+        color: var(--medium-grey);
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-size: 32px;
+        font-weight: bold;
+        cursor: pointer;
+        line-height: 1;
+        transition: color 0.2s ease;
+      }
+
+      .close-btn:hover {
+        color: var(--italian-red);
+      }
+
+      /* Pizza Images - Enhanced with subtle patterns */
+      .margherita-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(var(--italian-red), 0.8),
+            rgba(231, 76, 60, 0.8)
+          ),
+          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="%23f4d03f" opacity="0.2"/></svg>');
+        background-size: cover, 40px 40px;
+      }
+      .vesuvio-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(255, 107, 53, 0.8),
+            rgba(247, 147, 30, 0.8)
+          ),
+          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M10 0 L0 20 L20 20 Z" fill="%238b4513" opacity="0.2"/></svg>');
+        background-size: cover, 40px 40px;
+      }
+      .capricciosa-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(76, 175, 80, 0.8),
+            rgba(139, 195, 74, 0.8)
+          ),
+          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><rect x="0" y="0" width="10" height="10" fill="%23fff" opacity="0.2"/><rect x="10" y="10" width="10" height="10" fill="%23fff" opacity="0.2"/></svg>');
+        background-size: cover, 40px 40px;
+      }
+      .hawaii-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(255, 193, 7, 0.8),
+            rgba(255, 152, 0, 0.8)
+          ),
+          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M0 10 L10 0 L20 10 L10 20 Z" fill="%23d4af37" opacity="0.2"/></svg>');
+        background-size: cover, 40px 40px;
+      }
+      .marinara-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(63, 81, 181, 0.8),
+            rgba(103, 58, 183, 0.8)
+          ),
+          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><line x1="0" y1="0" x2="20" y2="20" stroke="%23fff" stroke-width="2" opacity="0.2"/><line x1="20" y1="0" x2="0" y2="20" stroke="%23fff" stroke-width="2" opacity="0.2"/></svg>');
+        background-size: cover, 40px 40px;
+      }
+      .artista-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(156, 39, 176, 0.8),
+            rgba(233, 30, 99, 0.8)
+          ),
+          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="4" fill="%23fff" opacity="0.2"/><circle cx="10" cy="10" r="8" stroke="%23fff" stroke-width="1" opacity="0.2"/></svg>');
+        background-size: cover, 40px 40px;
+      }
+      .cacciatore-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(139, 69, 19, 0.8),
+            rgba(160, 82, 45, 0.8)
+          ),
+          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M5 5 H15 V15 H5 Z" fill="%238b4513" opacity="0.2"/></svg>');
+        background-size: cover, 40px 40px;
+      }
+      .prescatore-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(0, 150, 136, 0.8),
+            rgba(76, 175, 80, 0.8)
+          ),
+          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M0 10 L10 5 L20 10 L10 15 Z" fill="%23607d8b" opacity="0.2"/></svg>');
+        background-size: cover, 40px 40px;
+      }
+
+      /* New backgrounds for Pasta/Other to maintain theme */
+      .pasta-carbonara-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(255, 204, 102, 0.8),
+            rgba(255, 178, 102, 0.8)
+          ),
+          url("https://source.unsplash.com/random/800x600/?carbonara");
+        background-size: cover;
+      }
+      .pasta-arrabbiata-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(220, 20, 60, 0.8),
+            rgba(178, 34, 34, 0.8)
+          ),
+          url("https://source.unsplash.com/random/800x600/?arrabbiata");
+        background-size: cover;
+      }
+      .bistecca-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(128, 0, 0, 0.8),
+            rgba(178, 34, 34, 0.8)
+          ),
+          url("https://source.unsplash.com/random/800x600/?steak");
+        background-size: cover;
+      }
+      .salmone-bg {
+        background: linear-gradient(
+            45deg,
+            rgba(0, 100, 0, 0.8),
+            rgba(0, 128, 0, 0.8)
+          ),
+          url("https://source.unsplash.com/random/800x600/?salmon");
+        background-size: cover;
+      }
+
+      /* Footer */
+      .footer {
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+        color: white;
+        padding: 4rem 2rem 1.5rem;
+        margin-top: 5rem;
+        border-top: 5px solid var(--italian-green);
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2.5rem;
+      }
+
+      .footer-section h3 {
+        margin-bottom: 1.2rem;
+        color: var(--italian-red);
+        font-family: "Charmonman", cursive;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      .footer-section p {
+        margin-bottom: 0.7rem;
+        opacity: 0.9;
+        font-size: 0.95rem;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        opacity: 0.7;
+        font-size: 0.85rem;
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .menu-hero {
+          height: 45vh;
+        }
+
+        .menu-hero-content h1 {
+          font-size: 3.2rem;
+        }
+
+        .menu-hero-content p {
+          font-size: 1.1rem;
+        }
+
+        .pizza-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .menu-nav {
+          padding: 0.5rem;
+        }
+
+        
+
+        .menu-tabs {
+          align-items: center;
+          gap: 0.7rem;
+        }
+
+        .menu-tab {
+          padding: 0.3rem 0.7rem;
+          font-size: 0.9rem;
+        }
+
+        .nav-menu {
+          display: none;
+        }
+
+        .mobile-menu-btn {
+          display: block;
+        }
+
+        .pizza-card {
+          /* margin-bottom: 0.5rem;  */
+          padding: 0.5rem 1rem;
+        }
+
+        .pizza-grid{
+          gap: 0.5rem;
+        }
+
+
+      }
+
+      @media (max-width: 480px) {
+        .logo {
+          font-size: 2.2rem;
+          gap: 0.4rem;
+        }
+        .italian-flag {
+          width: 30px;
+          height: 20px;
+        }
+        .menu-hero-content h1 {
+          font-size: 2.5rem;
+        }
+        .menu-hero-content p {
+          font-size: 1rem;
+        }
+        .pizza-name {
+          font-size: 1.7rem;
+        }
+        .pizza-price {
+          font-size: 1.5rem;
+        }
+        .pizza-ingredients {
+          font-size: 0.9rem;
+        }
+        .order-btn {
+          font-size: 1rem;
+          padding: 1rem;
+        }
+        .footer-section h3 {
+          font-size: 1.5rem;
+        }
+    }

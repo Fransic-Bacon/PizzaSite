@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meny - ROMA Restaurant & Pizzeria</title>
+    <script src="menu.js" defer></script>
+    <link rel="stylesheet" href="redmenu.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-container">
+        <a href="index.html" class="logo">
+          <div class="italian-flag"></div>
+          ROMA
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html">START</a></li>
+          <li><a href="#">MENY</a></li>
+          <li><a href="index.html#kontakt">KONTAKT</a></li>
+        </ul>
+      
+<div class="dropdown">
+  <button class="mobile-menu-btn" data-bs-toggle="dropdown" aria-expanded="false">
+ ☰
+  </button>
+  <ul class="dropdown-menu">
+      <a href="index.html#start"><li><button class="dropdown-item" type="button">Start</button></li> </a> 
+     <a href="#"><li><button class="dropdown-item" type="button">Menu</button></li> </a> 
+      <a href="index.html#kontakt"><li><button class="dropdown-item" type="button">Kontakt</button></li> </a> 
+  </ul>
+</div>
+
+      </nav>
+    </header>
+
+    <section class="menu-hero">
+      <div class="menu-hero-content">
+        <h1>Vår Meny</h1>
+        <p>
+          Välkommen till ROMA Restaurant & Pizzeria! Här hittar du vår
+          utsökta meny med handgjorda pizzor, pasta och andra läckerheter.
+          Utforska våra olika kategorier och hitta din favorit!
+        </p>
+      </div>
+    </section>
+
+    <div id="menu-content"></div>
+    <nav class="menu-nav">
+      <div class="menu-tabs">
+        <a href="#" class="menu-tab active" data-category="pizza">Pizza</a>
+        <a href="#" class="menu-tab" data-category="pasta">Pasta, kött, sås och Kebab</a>
+        <a href="#" class="menu-tab" data-category="sallad">Sallad & fisk</a>
+        <a href="#" class="menu-tab" data-category="barn">Barn rätter</a>
+        <a href="#" class="menu-tab" data-category="dryck">Dryck</a>
+      </div>
+    </nav>
+    <div class="menu-container">
+      <section class="menu-section active" id="pizza">
+        <div class="newstyle">
+          <h2>PIZZOR</h2>
+        </div>
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Margherita</h3>
+              <p class="pizza-ingredients">Ost, körsbärstomater, basilika.</p>
+              <span class="pizza-price">99 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Vesuvio</h3>
+              <p class="pizza-ingredients">Skinka.</p>
+              <span class="pizza-price">99 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Gondola</h3>
+              <p class="pizza-ingredients">Svamp.</p>
+              <span class="pizza-price">99 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Pio Pio</h3>
+              <p class="pizza-ingredients">Skinka, salami, ruccola.</p>
+              <span class="pizza-price">124 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Calzone</h3>
+              <p class="pizza-ingredients">Inbakad. Tomatsås, ost och skinka</p>
+              <span class="pizza-price">99 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Opera</h3>
+              <p class="pizza-ingredients">Skinka, tonfisk.</p>
+              <span class="pizza-price">124 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Milano</h3>
+              <p class="pizza-ingredients">Bacon, lök, paprika.</p>
+              <span class="pizza-price">124 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Capricciosa</h3>
+              <p class="pizza-ingredients">Skinka, svamp.</p>
+              <span class="pizza-price">124 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Al Tonno</h3>
+              <p class="pizza-ingredients">Tonfisk.</p>
+              <span class="pizza-price">124 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Gudfader</h3>
+              <p class="pizza-ingredients">Skinka, svamp, räkor.</p>
+              <span class="pizza-price">124 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Marinara</h3>
+              <p class="pizza-ingredients">Räkor, musslor.</p>
+              <span class="pizza-price">124 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Romana</h3>
+              <p class="pizza-ingredients">Skinka, svamp, paprika, oliver.</p>
+              <span class="pizza-price">124 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Hawaii</h3>
+              <p class="pizza-ingredients">Skinka, ananas.</p>
+              <span class="pizza-price">124 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Verona</h3>
+              <p class="pizza-ingredients">Svamp, räkor, paprika, lök.</p>
+              <span class="pizza-price">124 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Bussola</h3>
+              <p class="pizza-ingredients">Skinka, räkor.</p>
+              <span class="pizza-price">Från 124 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Pontus</h3>
+              <p class="pizza-ingredients">Skinka, tomater, gorgonzola.</p>
+              <span class="pizza-price">124 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Colloseo</h3>
+              <p class="pizza-ingredients">Bacon, ägg, lök.</p>
+              <span class="pizza-price">124 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Mafioso</h3>
+              <p class="pizza-ingredients">Tomatsås, ost, skinka, räkor och tonfisk.</p>
+              <span class="pizza-price">124 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Paradiso</h3>
+              <p class="pizza-ingredients">Salami, svamp, oliver.</p>
+              <span class="pizza-price">124 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Banana</h3>
+              <p class="pizza-ingredients">Skinka, banan, curry.</p>
+              <span class="pizza-price">124 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Vegetariana</h3>
+              <p class="pizza-ingredients">Svamp, lök, paprika, tomater, oliver, kronärtskocka, ananas.</p>
+              <span class="pizza-price">124 kr</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="newstyle">
+          <h2>KÖTTFÄRSPIZZOR</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Bologna</h3>
+              <p class="pizza-ingredients">Köttfärs.</p>
+              <span class="pizza-price">129 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Furkan Special</h3>
+              <p class="pizza-ingredients">Köttfärs, lök, svamp, paprika, färsk tomat.</p>
+              <span class="pizza-price">129 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Torino</h3>
+              <p class="pizza-ingredients">Köttfärs, lök, färsk tomat, chilipeppar.</p>
+              <span class="pizza-price">129 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Pikant</h3>
+              <p class="pizza-ingredients">Köttfärs, salami, fårost.</p>
+              <span class="pizza-price">Från 129 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Marcus</h3>
+              <p class="pizza-ingredients">Köttfärs, ägg, tabasco.</p>
+              <span class="pizza-price">129 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Florens</h3>
+              <p class="pizza-ingredients">Skinka, köttfärs.</p>
+              <span class="pizza-price">129 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Gustav</h3>
+              <p class="pizza-ingredients">Köttfärs, räkor, lök.</p>
+              <span class="pizza-price">129 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Emel</h3>
+              <p class="pizza-ingredients">Köttfärs, paprika, lök, ädelost.</p>
+              <span class="pizza-price">129 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Mexicana</h3>
+              <p class="pizza-ingredients">Köttfärs, jalapeño, lök, vitlök, tacosås, tacokryddmix.</p>
+              <span class="pizza-price">129 Kr</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="newstyle">
+          <h2>GREKISKAPIZZOR</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Grekisk</h3>
+              <p class="pizza-ingredients">Fårost, färska tomater, peperoni, purjolök.</p>
+              <span class="pizza-price">129 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Olympia</h3>
+              <p class="pizza-ingredients">Fårost, salami, kalamataoliver, paprika.</p>
+              <span class="pizza-price">129 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Venus</h3>
+              <p class="pizza-ingredients">Fårost, lök, svamp, paprika, kalamataoliver, purjolök.</p>
+              <span class="pizza-price">129 Kr</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="newstyle">
+          <h2>SPECIALPIZZOR</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Quattro</h3>
+              <p class="pizza-ingredients">Skinka, svamp, räkor, kalamataoliver, kronärtskocka.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Azteka</h3>
+              <p class="pizza-ingredients">Skinka, jalapeño, tacosås, crème fraiche, ruccola.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Aqvarius</h3>
+              <p class="pizza-ingredients">Räkor, musslor, krabba, tonfisk.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Apollo</h3>
+              <p class="pizza-ingredients">Skinka, räkor, ananas.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Special</h3>
+              <p class="pizza-ingredients">Rökt skinka, salami, gorgonzolaost, kronärtskocka.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Tommy</h3>
+              <p class="pizza-ingredients">Skinka, färsk tomat, fårost, ruccola.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Ufo</h3>
+              <p class="pizza-ingredients">Dubbelinbakad, skinka, räkor och svamp.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Disco</h3>
+              <p class="pizza-ingredients">Dubbelinbakad. skinka, svamp och köttfärs.</p>
+              <span class="pizza-price">Från 134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Mardin</h3>
+              <p class="pizza-ingredients">Inbakad. räkor, krabba och crème fraiche.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Kebabpizza</h3>
+              <p class="pizza-ingredients">Kebabkött, färsk tomat, lök, peperoni, kebabsås.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Nimas</h3>
+              <p class="pizza-ingredients">Skinka, räkor, ananas, banan, curry.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Deyvan</h3>
+              <p class="pizza-ingredients">Inbakad. skinka, ädelost, crème fraiche.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="newstyle">
+          <h2>KYCKLINGPIZZOR</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Indiana</h3>
+              <p class="pizza-ingredients">Kyckling, ananas, curry.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Italia</h3>
+              <p class="pizza-ingredients">Kyckling, banan, ananas, curry, jordnötter.</p>
+              <span class="pizza-price">Från 134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Gabbar</h3>
+              <p class="pizza-ingredients">Kyckling, skinka, ananas.</p>
+              <span class="pizza-price">134 Kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Bodrum</h3>
+              <p class="pizza-ingredients">Kyckling, peperoni, vitlök, färsk tomat.</p>
+              <span class="pizza-price">Från 134 Kr</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="newstyle">
+          <h2>FLÄSKFILÉPIZZOR</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Kronblom</h3>
+              <p class="pizza-ingredients">Fläskfilé, lök, paprika, gorgonzola, bearnaisesås.</p>
+              <span class="pizza-price">139 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Silvia</h3>
+              <p class="pizza-ingredients">Fläskfilé, svamp, färsk tomat, bearnaisesås</p>
+              <span class="pizza-price">139 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Venedig</h3>
+              <p class="pizza-ingredients">Halvinbakad. Fläskfilé, räkor, krabba och bearnaisesås.</p>
+              <span class="pizza-price">Från 139 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Brynäs</h3>
+              <p class="pizza-ingredients">Fläskfilé, lök, räkor, bearnaisesås, sparris.</p>
+              <span class="pizza-price">139 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Napoli</h3>
+              <p class="pizza-ingredients">Halvinbakad. Tomatsås, ost, fläskfilé, lök, färsk tomat och bearnaisesås.</p>
+              <span class="pizza-price">Från 139 kr</span>
+            </div>
+          </div>
+        </div>
+        <div class="newstyle">
+          <h2>LYXPIZZOR</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Sicilien</h3>
+              <p class="pizza-ingredients">Oxfilé, pinjenötter, citronsaft, olivolja</p>
+              <span class="pizza-price">190 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Adam</h3>
+              <p class="pizza-ingredients">Rökt skinka, lufttorkad skinka</p>
+              <span class="pizza-price">179 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Carribien</h3>
+              <p class="pizza-ingredients">Blåmusslor, räkor, chillipulver</p>
+              <span class="pizza-price">180 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Tazia</h3>
+              <p class="pizza-ingredients">Parmaskinka, pinjenötter, körsbärstomater</p>
+              <span class="pizza-price">195 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Gefle</h3>
+              <p class="pizza-ingredients">Halvinbakad räkor, utbakad oxfilé</p>
+              <span class="pizza-price">190 kr</span>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <section class="menu-section" id="pasta">
+        <div class="newstyle">
+          <h2>SPAGETTI</h2>
+        </div>
+        <div class="pizza-grid"> 
+          <div class="pizza-grid">
+            <div class="pizza-card">
+              <div class="pizza-content">
+                <h3 class="pizza-name">Bolognese Pasta</h3>
+                <p class="pizza-ingredients">Köttfärs, ost.</p>
+                <span class="pizza-price">130 kr</span>
+              </div>
+            </div>
+
+            <div class="pizza-card">
+              <div class="pizza-content">
+                <h3 class="pizza-name">Carbonara Pasta</h3>
+                <p class="pizza-ingredients">Bacon, lök, paprika, svamp och äggula.</p>
+                <span class="pizza-price">145 kr</span>
+              </div>
+            </div>
+
+            <div class="pizza-card">
+              <div class="pizza-content">
+                <h3 class="pizza-name">Kycklingpasta</h3>
+                <p class="pizza-ingredients">Kyckling, svamp, lök och paprika.</p>
+                <span class="pizza-price">145 kr</span>
+              </div>
+            </div>
+
+            <div class="pizza-card">
+              <div class="pizza-content">
+                <h3 class="pizza-name">Vegetarisk Pasta</h3>
+                <p class="pizza-ingredients">Fårost, svamp, lök och paprika.</p>
+                <span class="pizza-price">145 kr</span>
+              </div>
+            </div>
+
+            <div class="pizza-card">
+              <div class="pizza-content">
+                <h3 class="pizza-name">Fläskfilépasta</h3>
+                <p class="pizza-ingredients">Fläsk, lök, paprika och svamp.</p>
+                <span class="pizza-price">150 kr</span>
+              </div>
+            </div>
+
+            <div class="pizza-card">
+              <div class="pizza-content">
+                <h3 class="pizza-name">Oxfilépasta</h3>
+                <p class="pizza-ingredients">Oxfilé, lök, svamp och paprika.</p>
+                <span class="pizza-price">175 kr</span>
+              </div>
+            </div>
+
+            <div class="pizza-card">
+              <div class="pizza-content">
+                <h3 class="pizza-name">Lasagne</h3>
+                <p class="pizza-ingredients"></p> <span class="pizza-price">142 kr</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="newstyle">
+          <h2>KÖTTRÄTTER</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Filé Oscar</h3>
+              <p class="pizza-ingredients">Med räkor, sparris och bearnaisesås.</p>
+              <span class="pizza-price">164 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Fläskfilé</h3>
+              <p class="pizza-ingredients">Med bearnaisesås och rödvinssås.</p>
+              <span class="pizza-price">164 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Fläskfilé Hawaii</h3>
+              <p class="pizza-ingredients">Med banan, ananas och bearnaisesås.</p>
+              <span class="pizza-price">164 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Ost/Senapsgratinerad Fläskfilé</h3>
+              <p class="pizza-ingredients">Med bearnaisesås.</p>
+              <span class="pizza-price">164 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Grillspett</h3>
+              <p class="pizza-ingredients">Med fläskfilé och tzatziksås.</p>
+              <span class="pizza-price">164 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Grilltallrik</h3>
+              <p class="pizza-ingredients">Med fläsk, korv, bacon och bearnaisesås.</p>
+              <span class="pizza-price">164 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Black & White</h3>
+              <p class="pizza-ingredients">Med oxfilé, fläskfilé, rödvinssås och bearnaisesås.</p>
+              <span class="pizza-price">184 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Oxfilé Provencale</h3>
+              <p class="pizza-ingredients">Med rödvinssås och vitlökssmör.</p>
+              <span class="pizza-price">184 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Oxfilé</h3>
+              <p class="pizza-ingredients">Med valfri ädelostsås/beasås/gorgonzola/basilikasås.</p>
+              <span class="pizza-price">184 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Pepparstek</h3>
+              <p class="pizza-ingredients">Med oxfilé och grönpepparsås.</p>
+              <span class="pizza-price">205 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">T3 Special</h3>
+              <p class="pizza-ingredients">Oxfilé, fläskfilé, kycklingfilé med bearnaisesås.</p>
+              <span class="pizza-price">214 kr</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="newstyle">
+          <h2>KEBAB</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Kebab med bröd</h3>
+              <p class="pizza-ingredients">Sallad, lök, feferoni, tomat, gurka och kebabsås.</p>
+              <span class="pizza-price">95 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Kebabtallrik</h3>
+              <p class="pizza-ingredients">Pommes, sallad, lök, gurka, peperoni, tomat, kebabsås.</p>
+              <span class="pizza-price">130 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Kebab med ris</h3>
+              <p class="pizza-ingredients">Sallad, lök, feferoni, tomat, gurka och kebabsås.</p>
+              <span class="pizza-price">130 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Kebab Skrovmål</h3>
+              <p class="pizza-ingredients">Med bröd, pommes, sallad, lök, gurka, tomat, feferoni och kebabsås.</p>
+              <span class="pizza-price">130 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Kebabrulle</h3>
+              <p class="pizza-ingredients">Sallad, lök, peperoni, tomat, gurka, kebabsås</p>
+              <span class="pizza-price">115 kr</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="newstyle">
+          <h2>LYXBURGARE</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Lyxburgare 180 g</h3>
+              <p class="pizza-ingredients">Med klyftpotatis</p>
+              <span class="pizza-price">179 kr</span>
+            </div>
+          </div>
+        </div>
+
+     <div class="newstyle">
+          <h2>SÅSER</h2>
+        </div>
+        <div class="pizza-grid">  <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Vitlökssås</h3>
+              <span class="pizza-price">15 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Rhode Islandssås</h3>
+              <span class="pizza-price">15 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Kebabsås Stark</h3>
+              <span class="pizza-price">15 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Bearnaisesås</h3>
+              <span class="pizza-price">15 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Tzatzikisås</h3>
+              <span class="pizza-price">15 kr</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="sallad">
+
+        <div class="newstyle">
+          <h2>SALLADER</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Kycklingsallad</h3>
+              <p class="pizza-ingredients">Fårost, napolitansk sallad, körsbärstomater, paprika, oliver, rödbetor</p>
+              <span class="pizza-price">140 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Parmasallad</h3>
+              <p class="pizza-ingredients">Mozzarellaost, napolitansk sallad, körsbärstomater, paprika, oliver, rödbetor</p>
+              <span class="pizza-price">145 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Ost & Skink sallad</h3>
+              <p class="pizza-ingredients">Sallad, lök, gurka, tomat, ananas</p>
+              <span class="pizza-price">105 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Räksallad</h3>
+              <p class="pizza-ingredients">Citronsås, napolitansk sallad, körsbärstomater, paprika, oliver, rödbetor</p>
+              <span class="pizza-price">140 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Kebabsallad</h3>
+              <p class="pizza-ingredients">Kebabsås, napolitansk sallad, tomat, lök</p>
+              <span class="pizza-price">105 kr</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="newstyle">
+          <h2>FISKRÄTTER</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Sprödbakad torsk</h3>
+              <p class="pizza-ingredients">Med remouladsås och kokt potatis</p>
+              <span class="pizza-price">130 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Rödspättafilé</h3>
+              <p class="pizza-ingredients">Med remouladsås och kokt potatis</p>
+              <span class="pizza-price">130 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Lax</h3>
+              <p class="pizza-ingredients">Med vitvinssås och kokt potatis</p>
+              <span class="pizza-price">170 kr</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="barn">
+
+        <div class="newstyle">
+          <h2>BARNMENY</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Ostburgare 90 gr</h3>
+              <p class="pizza-ingredients"></p>
+              <span class="pizza-price">95 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Pasta Carbonara</h3>
+              <p class="pizza-ingredients"></p>
+              <span class="pizza-price">95 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Pasta</h3>
+              <p class="pizza-ingredients">Med köttfärs och ost</p>
+              <span class="pizza-price">95 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Grillkorv</h3>
+              <p class="pizza-ingredients">Med pommes</p>
+              <span class="pizza-price">95 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Fläskfilé</h3>
+              <p class="pizza-ingredients">Med Pommes och bearnaisesås</p>
+              <span class="pizza-price">95 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Chicken Nuggets</h3>
+              <p class="pizza-ingredients"></p>
+              <span class="pizza-price">95 kr</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="menu-section" id="dryck">
+
+        <div class="newstyle">
+          <h2>Dryck</h2>
+        </div>
+
+        <div class="pizza-grid">
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Coca-cola 33cl</h3>
+              <p class="pizza-ingredients"></p>
+              <span class="pizza-price">20 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Coca-cola Zero 33cl</h3>
+              <p class="pizza-ingredients"></p>
+              <span class="pizza-price">20 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Sprite 33 cl</h3>
+              <p class="pizza-ingredients"></p>
+              <span class="pizza-price">20 kr</span>
+            </div>
+          </div>
+
+          <div class="pizza-card">
+            <div class="pizza-content">
+              <h3 class="pizza-name">Fanta 33 cl</h3>
+              <p class="pizza-ingredients"></p>
+              <span class="pizza-price">20 kr</span> </div>
+          </div>
+        </div>
+      </section>
+    </div> </body>
+</html>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ROMA Restaurant & Pizzeria</h3>
+          <p>En smak av Italien, direkt till ditt bord.</p>
+          <p>Njut av våra handgjorda pizzor och traditionella rätter.</p>
+        </div>
+        <div class="footer-section" id="kontakt">
+          <h3>Kontakt</h3>
+          <p>Adress: Nygatan 35 i Gävle </p>
+          <p>
+            Telefon:
+            <a href="tel:026101755" style="color: white; text-decoration: none"
+              >026-10 17 55</a
+            >
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Öppettider</h3>
+          <p>Mån-Fre: 11:00 - 22:00</p>
+          <p>Lör-Sön: 12:00 - 22:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; Copyright © 2025 mig själv | skapad av mig
+      </div>
+    </footer>
+  </body>
+</html>
