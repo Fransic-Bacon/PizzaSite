@@ -7,7 +7,8 @@
         --light-grey: #e9ecef;
         --medium-grey: #666;
         --cream-white: #fdfdfd;
-      }
+      } 
+
 
       * {
         margin: 0;
@@ -394,30 +395,6 @@ font-size: large;
         margin: 25px 0;
       }
 
-      .order-btn {
-        width: 100%;
-        padding: 1.2rem;
-        background: linear-gradient(45deg, var(--italian-red), #e74c3c);
-        color: white;
-        border: none;
-        border-radius: 12px;
-        font-weight: 700;
-        font-size: 1.1rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-      }
-
-      .order-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 30px rgba(var(--italian-red), 0.4);
-      }
-
-      .order-btn:active {
-        transform: translateY(0);
-        box-shadow: 0 4px 15px rgba(var(--italian-red), 0.2);
-      }
 
       @keyframes slideIn {
         from {
@@ -446,117 +423,6 @@ font-size: large;
         color: var(--italian-red);
       }
 
-      /* Pizza Images - Enhanced with subtle patterns */
-      .margherita-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(var(--italian-red), 0.8),
-            rgba(231, 76, 60, 0.8)
-          ),
-          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="%23f4d03f" opacity="0.2"/></svg>');
-        background-size: cover, 40px 40px;
-      }
-      .vesuvio-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(255, 107, 53, 0.8),
-            rgba(247, 147, 30, 0.8)
-          ),
-          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M10 0 L0 20 L20 20 Z" fill="%238b4513" opacity="0.2"/></svg>');
-        background-size: cover, 40px 40px;
-      }
-      .capricciosa-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(76, 175, 80, 0.8),
-            rgba(139, 195, 74, 0.8)
-          ),
-          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><rect x="0" y="0" width="10" height="10" fill="%23fff" opacity="0.2"/><rect x="10" y="10" width="10" height="10" fill="%23fff" opacity="0.2"/></svg>');
-        background-size: cover, 40px 40px;
-      }
-      .hawaii-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(255, 193, 7, 0.8),
-            rgba(255, 152, 0, 0.8)
-          ),
-          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M0 10 L10 0 L20 10 L10 20 Z" fill="%23d4af37" opacity="0.2"/></svg>');
-        background-size: cover, 40px 40px;
-      }
-      .marinara-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(63, 81, 181, 0.8),
-            rgba(103, 58, 183, 0.8)
-          ),
-          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><line x1="0" y1="0" x2="20" y2="20" stroke="%23fff" stroke-width="2" opacity="0.2"/><line x1="20" y1="0" x2="0" y2="20" stroke="%23fff" stroke-width="2" opacity="0.2"/></svg>');
-        background-size: cover, 40px 40px;
-      }
-      .artista-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(156, 39, 176, 0.8),
-            rgba(233, 30, 99, 0.8)
-          ),
-          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="4" fill="%23fff" opacity="0.2"/><circle cx="10" cy="10" r="8" stroke="%23fff" stroke-width="1" opacity="0.2"/></svg>');
-        background-size: cover, 40px 40px;
-      }
-      .cacciatore-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(139, 69, 19, 0.8),
-            rgba(160, 82, 45, 0.8)
-          ),
-          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M5 5 H15 V15 H5 Z" fill="%238b4513" opacity="0.2"/></svg>');
-        background-size: cover, 40px 40px;
-      }
-      .prescatore-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(0, 150, 136, 0.8),
-            rgba(76, 175, 80, 0.8)
-          ),
-          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M0 10 L10 5 L20 10 L10 15 Z" fill="%23607d8b" opacity="0.2"/></svg>');
-        background-size: cover, 40px 40px;
-      }
-
-      /* New backgrounds for Pasta/Other to maintain theme */
-      .pasta-carbonara-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(255, 204, 102, 0.8),
-            rgba(255, 178, 102, 0.8)
-          ),
-          url("https://source.unsplash.com/random/800x600/?carbonara");
-        background-size: cover;
-      }
-      .pasta-arrabbiata-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(220, 20, 60, 0.8),
-            rgba(178, 34, 34, 0.8)
-          ),
-          url("https://source.unsplash.com/random/800x600/?arrabbiata");
-        background-size: cover;
-      }
-      .bistecca-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(128, 0, 0, 0.8),
-            rgba(178, 34, 34, 0.8)
-          ),
-          url("https://source.unsplash.com/random/800x600/?steak");
-        background-size: cover;
-      }
-      .salmone-bg {
-        background: linear-gradient(
-            45deg,
-            rgba(0, 100, 0, 0.8),
-            rgba(0, 128, 0, 0.8)
-          ),
-          url("https://source.unsplash.com/random/800x600/?salmon");
-        background-size: cover;
-      }
 
       /* Footer */
       .footer {

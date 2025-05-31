@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROMA Restaurant & Pizzeria</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+</head>
+    <body>
+    <div id="start" style="display: hidden;"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html#start" class="logo">
+                <div class="italian-flag"></div>
+                ROMA
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#">START</a></li>
+                <li><a href="menu.html">MENY</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+            
+            <div class="dropdown">
+                <button class="mobile-menu-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                    ☰
+                </button>
+                <ul class="dropdown-menu">
+                    <a href="#"><li><button class="dropdown-item" type="button">Start</button></li></a>
+                    <a href="menu.html"><li><button class="dropdown-item" type="button">Menu</button></li></a>
+                    <a href="kontakt.html"><li><button class="dropdown-item" type="button">Kontakt</button></li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main container with carousel and overlay -->
+    <div class="main-container">
+        <!-- Carousel (50% of screen) -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://romagavle.se/wp-content/uploads/2021/10/Bild-2-Pizza.jpg" alt="Delicious Italian Pizza">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Äkta italiensk pizza</h5>
+                        <p>Handgjorda pizzor med färska ingredienser</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://romagavle.se/wp-content/uploads/2021/10/Bild-2-Pizza.jpg" alt="Fresh Italian Ingredients">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Färska ingredienser</h5>
+                        <p>Importerat direkt från Italien</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://romagavle.se/wp-content/uploads/2021/10/Bild-2-Pizza.jpg" alt="Cozy Restaurant Atmosphere">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mysig atmosfär</h5>
+                        <p>Upplev Italien mitt i Gävle</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Overlay section (remaining 50% of screen) -->
+        <div class="overlay-section">
+            <div class="overlay-content">
+                <h1>Välkommen till Pizzeria Roma i Gävle!</h1>
+                <p>Vi finns på Nygatan 35 i Gävle. Vi har A la carte meny och utsökta italienska pizzor!</p>
+                <div class="cta-buttons">
+                    <a href="" class="btn-italia">BESTÄLL - 026 10 17 55</a>
+                    <a href="menu.html" class="btn-outline">VÅR MENY</a>
+                    <a href="kontakt.html" class="btn-outline">BOKA BORD</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="menu-categories-section">
+        <div class="menu-background">
+            <div class="menu-overlay">
+                <div class="container">
+                    <div class="menu-categories-grid">
+                       <a href="menu.html#pizza">  <div class="menu-category">
+                            <div class="category-circle">
+                                <img src="" alt="" class="category-image">
+                                <div class="category-overlay">
+                                    <span class="category-label">Pizza meny</span>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                        
+                     <a href="menu.html#pasta">     <div class="menu-category">
+                            <div class="category-circle">
+                                <img src="" alt="" class="category-image">
+                                <div class="category-overlay">
+                                    <span class="category-label">Pasta Meny</span>
+                                </div>
+                            </div>
+                        </div>
+                     </a>
+                        <a href="menu.html#alacarte">
+                        <div class="menu-category">
+                            <div class="category-circle">
+                                <img src="" alt="" class="category-image">
+                                <div class="category-overlay">
+                                    <span class="category-label">Ala carte</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="menu.html">
+                        <div class="menu-category">
+                            <div class="category-circle">
+                                <img src="" alt="" class="category-image">
+                                <div class="category-overlay">
+                                    <span class="category-label">Hela Menyn</span>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+<!-- fotter -->
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ROMA Restaurant & Pizzeria</h3>
+          <p>En smak av Italien, direkt till ditt bord.</p>
+          <p>Njut av våra handgjorda pizzor och traditionella rätter.</p>
+        </div>
+        <div class="footer-section" >
+          <h3>Kontakt</h3>
+          <p>Adress: Nygatan 35 i Gävle </p>
+          <p>
+            Telefon:
+            <a href="" style="color: white; text-decoration: none"
+              >026-10 17 55</a
+            >
+          </p>
+        
+        </div>
+        <div class="footer-section">
+          <h3>Öppettider</h3>
+          <p>Mån-Fre: 11:00 - 22:00</p>
+          <p>Lör-Sön: 12:00 - 22:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; Copyright © 2025 mig själv | skapad av mig
+      </div>
+    </footer>
+
+
+
+
+</body>
+</html>
