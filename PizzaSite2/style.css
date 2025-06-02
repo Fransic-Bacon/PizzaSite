@@ -347,7 +347,7 @@ font-size: 1.9rem;
   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); */
   letter-spacing: 1px;
   padding: 0 1rem;
-   -webkit-text-stroke: 0.9px black;
+   /* -webkit-text-stroke: 0.9px black; */
 }
 
 /* Footer */
