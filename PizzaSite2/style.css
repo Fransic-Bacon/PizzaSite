@@ -258,7 +258,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  filter: brightness(1.1);
+  filter: brightness(0.85);
 }
 
 .menu-overlay {
@@ -340,13 +340,14 @@ body {
 }
 
 .category-label {
-  color: black;
+  color: white;
   font-weight: 700;
 font-size: 1.9rem;
   text-align: center;
   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); */
   letter-spacing: 1px;
   padding: 0 1rem;
+   -webkit-text-stroke: 0.9px black;
 }
 
 /* Footer */

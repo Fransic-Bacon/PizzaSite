@@ -165,7 +165,7 @@ font-size: large;
         left: 0;
         right: 0;
         bottom: 0;
-        background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1280px-Flag_of_Italy.svg.png");
+        background: linear-gradient(to right, #009246 33%, #fff 33% 66%, #ce2b37 66%);
         opacity: 0.8;
       }
 
